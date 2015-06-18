@@ -2,9 +2,37 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <link rel="stylesheet" href="simplegrid.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css"/>
+    <title>RPSSL</title>
 </head>
 <body>
+    <div class="grid grid-pad">
+        <div class="col-1-3">
+            <header>
+                <h3>Rock, Paper, Scissors, Spock, Lizard!</h3>
+            </header>
+            <p>Let's play!</p>
+        </div>
 
+        <div class="col-1-6">
+            <div class="gameArea">
+            </div>
+            <p>Click on your choice. Once you choose, the computer will choose and a winner will be announced!</p>
+            <div class="options">
+                <input type="button" name="rock" value="rock"/>
+                <input type="button" name="paper" value="paper"/>
+                <input type="button" name="scissors" value="scissors"/>
+                <input type="button" name="Spock" value="Spock"/>
+                <input type="button" name="lizard" value="lizard"/>
+            </div>
+
+            <button>Reset</button>
+        </div>
+    </div>
+
+
+<script src="rockPaperScissors.js"></script>
 </body>
 </html>
