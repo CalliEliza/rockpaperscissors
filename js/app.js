@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     // reset gameArea
     $("#reset").click(function() {
-        $("#result").html(" ");
+        $("#gameArea").empty();
     });
 });
 
