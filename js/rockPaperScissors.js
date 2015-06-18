@@ -90,4 +90,3 @@ function  rpsls(player_choice) {
 }
 
 
-console.log(rpsls());
