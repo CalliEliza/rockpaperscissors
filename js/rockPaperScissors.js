@@ -59,6 +59,7 @@ function number_to_name(number) {
 
 //computes computer_choice, takes players choice and determines winner
 function  rpsls(player_choice) {
+    var player_choice;
     // computer's number, random
     computer_num = Math.round(Math.random(0,5));
 
