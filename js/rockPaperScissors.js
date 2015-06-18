@@ -61,6 +61,9 @@ function number_to_name(number) {
 function  rpsls(player_choice) {
     var player_choice;
     var winner;
+    var player = "Player chooses " +player_choice+ ".";
+    document.getElementById("Playerch").innerHTML = player;
+
     // computer's number, random
     computer_num = Math.round(Math.random(0,5));
 
@@ -69,7 +72,8 @@ function  rpsls(player_choice) {
 
 // converts computer's number to choice
     comp_choice = number_to_name(computer_num);
-
+    var computer = "Computer chooses " +comp_choice+ ".";
+    document.getElementById("ComputerCh").innerHTML = computer;
 // computes diff between comp and play and divides by modulo 5
     dif_player_comp = (computer_num - player_num) % 5;
 
@@ -79,12 +83,12 @@ function  rpsls(player_choice) {
         dif_player_comp = dif_player_comp * -1;
     }
     if ( dif_player_comp === 1 || dif_player_comp === 2) {
-         winner = "The winner is " + comp_choice + ".";
+         winner = "Computer Wins!";
         document.getElementById('gameArea').innerHTML = winner;
 
     }
     else if (dif_player_comp === 3 || dif_player_comp === 4) {
-        winner = "The winner is " +player_choice+ ".";
+        winner = "Player Wins!";
         document.getElementById('gameArea').innerHTML = winner;
     }
     else if  (comp_choice === player_choice) {
