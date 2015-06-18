@@ -16,6 +16,12 @@ h1,h2,h3,h4,h5,h6,p {
     font-family: "Nixie One", cursive;
 }
 
+.head {
+    background-color: #c98392;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Game Area*/
 #gameArea {
     margin: 0 auto;
@@ -37,7 +43,6 @@ h1,h2,h3,h4,h5,h6,p {
     padding-left: 1em;
     color: #83b5b1;
 }
-
 
 /*button styles*/
 button {
