@@ -22,8 +22,10 @@ $(document).ready(function() {
         player_choice = "lizard";
         rpsls("lizard");
     });
+
+    // reset gameArea
+    $("#reset").click(function() {
+        $("#result").html(" ");
+    });
 });
 
-var reset = function() {
-    document.getElementById('result').innerHTML = " ";
-};
