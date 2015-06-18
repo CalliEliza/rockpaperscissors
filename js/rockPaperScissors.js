@@ -60,6 +60,7 @@ function number_to_name(number) {
 //computes computer_choice, takes players choice and determines winner
 function  rpsls(player_choice) {
     var player_choice;
+    var winner;
     // computer's number, random
     computer_num = Math.round(Math.random(0,5));
 
@@ -73,20 +74,25 @@ function  rpsls(player_choice) {
     dif_player_comp = (computer_num - player_num) % 5;
 
 // set winner variable
-    var winner;
+
     if (dif_player_comp < 0 ) {
         dif_player_comp = dif_player_comp * -1;
     }
     if ( dif_player_comp === 1 || dif_player_comp === 2) {
          winner = "The winner is " + comp_choice + ".";
+        document.getElementById('gameArea').innerHTML = winner;
 
     }
     else if (dif_player_comp === 3 || dif_player_comp === 4) {
         winner = "The winner is " +player_choice+ ".";
+        document.getElementById('gameArea').innerHTML = winner;
     }
     else if  (comp_choice === player_choice) {
-        return winner = "It's a tie!"
+        winner = "It's a tie!"
+        return document.getElementById('gameArea').innerHTML = winner;
     }
 }
+
+
 
 

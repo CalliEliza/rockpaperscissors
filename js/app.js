@@ -24,5 +24,6 @@ $(document).ready(function() {
     });
 });
 
-document.getElementById('gameArea').innerHTML = winner;
-
+var reset = function() {
+    document.getElementById('result').innerHTML = " ";
+};
