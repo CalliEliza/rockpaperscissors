@@ -18,10 +18,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Game Area*/
 #gameArea {
-    background-color: #f0e8da;
     height: 20em;
     width: 20em;
 }
+
 
 /*button styles*/
 button {
