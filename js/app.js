@@ -22,8 +22,6 @@ $(document).ready(function() {
         player_choice = "lizard";
         rpsls("lizard");
     });
+
 });
 
-$(document).click(function(event) {
-    var text = $(event.target).text();
-});

@@ -78,15 +78,14 @@ function  rpsls(player_choice) {
         dif_player_comp = dif_player_comp * -1;
     }
     if ( dif_player_comp === 1 || dif_player_comp === 2) {
-         winner = comp_choice;
-        return console.log("The winner is " +winner+ ".");
+         winner = "The winner is " + comp_choice + ".";
+
     }
     else if (dif_player_comp === 3 || dif_player_comp === 4) {
-        winner = player_choice;
-        return console.log("The winner is " +winner+ ".");
+        winner = "The winner is " +player_choice+ ".";
     }
     else if  (comp_choice === player_choice) {
-        return console.log("It's a tie!");
+        return winner = "It's a tie!"
     }
 }
 
