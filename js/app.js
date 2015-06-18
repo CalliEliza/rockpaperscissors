@@ -22,6 +22,7 @@ $(document).ready(function() {
         player_choice = "lizard";
         rpsls("lizard");
     });
-
 });
+
+document.getElementById('gameArea').innerHTML = winner;
 
