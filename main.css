@@ -19,18 +19,23 @@ h1,h2,h3,h4,h5,h6,p {
 /* Game Area*/
 #gameArea {
     margin: 0 auto;
-    padding-top: 5em;
+    padding-top: 2em;
     padding-left: 5em;
     height: 20em;
     width: 20em;
     color: #83b5b1;
-    font-size: 1.3em;
 }
 #Playerch {
-
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-left: 1em;
+    color: #83b5b1;
 }
 #ComputerCh {
-
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-left: 1em;
+    color: #83b5b1;
 }
 
 
